@@ -48,11 +48,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+SQL allows us to create, update, or delete information within databases. 
+
 2. Why do tables need a `primary key`?
+
+Tables need a primary key to ensure each row is accessible and unique to prevent errors
 
 3. What is the name given to a table column that references the primary key on another table.
 
+Foreign Key
+
 4. What do we need in order to have a _many to many_ relationship between two tables.
+
+You need an intermediate table
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
