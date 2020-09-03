@@ -1,12 +1,15 @@
 const express = require("express")
 const helmet = require("helmet")
 
+const projectRouter = require("./router/projectRouter")
+
 const server = express()
 const port = 5000
 
 server.use(helmet())
 server.use(express.json())
 
+server.use(projectRouter)
 
 server.use((err,req,res,next) => {
     res.status(500).json({
