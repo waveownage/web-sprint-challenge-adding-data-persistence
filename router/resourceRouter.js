@@ -12,7 +12,7 @@ router.get("/resources", async (req, res, next) => {
     }
 })
 
-router.post('/resources', (req, res) => {
+router.post('/resources', (req, res, next) => {
     Resource.add(req.body)
     .then(resource => {
       res.status(201).json(resource);
