@@ -2,6 +2,13 @@ const db = require("../data/config")
 
 function find(){
     return db("task")
+    .join('project', 'project.id', 'task.project_id')
+    .select(
+      'project.name as project name',
+      'project.description as project description',
+      'task.description as task',
+      'task.notes as task notes'
+    );
 }
 function findById(id){
     return db("task")
